@@ -6,6 +6,16 @@ body {
   position: absolute;
   top: 50%;
 }
+.bigLine div {
+  left: 38%;
+  top: 49%;
+  position: absolute;
+  float: left;
+  height: 10px;
+  width: 354px;
+  background-color: rgb(106, 28, 179);
+  margin-right: 50px;
+}
 .swing div {
   border-radius: 50%;
   float: left;
@@ -21,13 +31,13 @@ body {
 
   }
   100% {
-   transform: rotate(50deg) translateX(-100px);
+   transform: rotate(50deg) translateX(-100px) translateY(25px);
    
   }
 }
 @keyframes ball-r {
   0% {
-    transform: rotate(-50deg) translateX(100px);
+    transform: rotate(-50deg) translateX(100px) translateY(25px);
     }
   50%,
   100% {
@@ -35,8 +45,49 @@ body {
     }
 }
 .swing-l {
-  animation: ball-l .600s ease-in-out infinite alternate;
+  animation: ball-l .700s ease-in-out infinite alternate;
 }
 .swing-r {
-  animation: ball-r .600s ease-in-out infinite alternate;
+  animation: ball-r .700s ease-in-out infinite alternate;
+}
+
+
+.line div {
+  top:-45px;
+  float: left;
+  height: 100px;
+  width: 1px;
+  background-color: rgb(106, 28, 179);
+  margin-right: 50px;
+  
+}
+
+
+
+@keyframes line-l {
+  0%, 50% {
+    transform: rotate(0) translateX(0);
+
+  }
+  100% {
+   transform: rotate(50deg) translateX(0px);
+   
+  }
+}
+@keyframes line-r {
+  0% {
+    transform: rotate(-50deg) translateX(0px);
+    }
+  50%,
+  100% {
+    transform: rotate(0);
+    }
+}
+.line-l {
+  transform-origin: 100% 0;
+  animation: line-l .700s ease-in-out infinite alternate;
+}
+.line-r {
+  transform-origin: 100% 0;
+  animation: line-r .700s ease-in-out infinite alternate;
 }
