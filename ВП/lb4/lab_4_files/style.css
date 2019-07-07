@@ -1,0 +1,73 @@
+html, body {
+height: 100%;
+width: 100%;
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .blank {
+       width: 320px;
+      height: 920px;
+    }
+    .w{
+      margin-left: 75px;
+ 
+    }
+        .xs{
+      display: none;
+
+    }
+input::placeholder{
+      color:#6C9392;
+    }
+    textarea::placeholder{
+      color:#6C9392;
+    }
+}
+@media (min-width:768px) and (max-width: 1199px) {
+    .blank {
+      width: 768px;
+      height: 560px;
+     }
+    .w{
+      margin-left: 75px;
+
+    }
+  input::placeholder{
+      color:#6C9392;
+    }
+    textarea::placeholder{
+      color:#6C9392;
+    }
+
+}
+@media (min-width: 1200px) {
+    .blank {
+      width: 1200px;
+      height: 560px;
+
+    }
+    .w{
+      margin-left: 75px;
+
+    }
+  input::placeholder{
+      color:#6C9392;
+    }
+    textarea::placeholder{
+      color:#6C9392;
+    }
+}
+
+.w{
+  float: center;
+}
+.blank{
+
+}
+.agree{
+margin-left: 75px;
+margin-bottom: 20px;
+}
+body{
+  background: url("./books.jpg");
+}

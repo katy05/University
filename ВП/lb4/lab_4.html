@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html><head>
+
+<link rel="stylesheet" href="./lab_4_files/style.css">
+<meta charset="utf-8">
+<title>Формуляр</title>
+</head><body >
+  <style>
+
+
+  @font-face {
+    font-family: EckmannC; 
+    src: url(EckmannC.ttf);
+   }
+   @font-face {
+    font-family: Calligraph TYGRA; 
+    src: url(CalligraphTYGRA.ttf);
+   }
+   
+   @font-face {
+    font-family: ARCO Cyrillic; 
+    src: url(ARCOCyrillic.otf);
+   }
+   h1{
+       font-family: EckmannC;
+       size: 24;
+       text-align:center;
+       color: #AA2A53;
+       font-size: 70px;
+   }
+    </style>
+  <h1>Формуляр читателя</h1>
+
+  <div class="blank">
+    <form class="w">
+       
+          <fieldset> 
+          
+        <legend style="font-size: 45px;font-family: Calligraph TYGRA;"><strong>Личные данные</strong></legend>
+        
+      <p><input name="Имя" placeholder="Имя" ></p>
+    
+      <p><textarea type="text" placeholder="Фамилия"></textarea></p>
+    
+      <p><input type="text" placeholder="Отчество" ></p>
+
+      <label style="font-size: 25px;font-family: ARCO Cyrillic;  ">Пол:</label>
+      <p style="font-size: 15px;font-family: ARCO Cyrillic;"><input type="radio" name="answer" value="a1">М
+        <input type="radio" name="answer" value="a1">Ж<br></p>
+
+      <label style="font-size: 25px;font-family: ARCO Cyrillic;">Дата рождения</label>
+      <p><input type="date"></p>
+   
+        <p><input name="Домашний адрес" placeholder="Домашний адрес" ></p>
+      <p><input type="tel" placeholder="Номер телефона"></p>
+      <p style="font-size: 25px;font-family: ARCO Cyrillic; "><b>Какими языками вы владеете?</b></p>
+      <p><input type="checkbox" name="option1" value="a1" checked>Русский<Br>
+      <input type="checkbox" name="option2" value="a2">Английский<Br>
+      <input type="checkbox" name="option3" value="a3">Немецкий<Br> 
+      <input type="checkbox" name="option4" value="a4">Польский<Br> 
+      <input type="checkbox" name="option5" value="a5">Чешский</p>
+      <label style="font-size: 25px;font-family: ARCO Cyrillic;">Предпочитаемый жанр </label>
+     <select name="choice">
+              <option value="1">Роман-эпопея
+              <option value="2">Роман
+                  <option value="3">Повесть
+                      <option value="4">Рассказ
+                          <option value="5">Притча
+                              <option value="6">Лирическое стихотворение
+                                  <option value="7">Элегия
+                                      <option value="8">Послание
+                                          <option value="9">Эпиграмма
+                                              <option value="10">Ода
+                                                  <option value="11">Сонет
+                                                      <option value="12">Комедия
+                                                          <option value="13">Трагедия
+                                                              <option value="14">Драма
+                                                                  <option value="15">Поэма
+                                                                      <option value="16">Баллада
+            </select>
+
+           <br>  <label style="font-size: 25px;font-family: ARCO Cyrillic;" for="userPassword">Пароль: </label>
+            <input id="userPassword" type="password" autocomplete="country">
+      <label style="font-size: 25px;font-family: ARCO Cyrillic;margin-top:-5px; "><br/><br/>Правила библиотеки знаю и обязуюсь выполнять<br/><br/></label>
+      <p style="font-size: 15px;font-family: ARCO Cyrillic;margin-top:-5px;"><input type="radio" name="answer" value="a1">Да
+        <input type="radio" name="answer" value="a1">Нет<br></p>
+    </form>
+ </fieldset>
+ <form class="agree">
+  <p ><input style="background: -webkit-gradient(linear, 0 0, 0 100%, from(#000000),  color-stop(0.5, #000000));color:#fff;font-family: ARCO Cyrillic;" type="submit" value="Готово"></p>
+</form>
+
+  </body></html>
