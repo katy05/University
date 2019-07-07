@@ -1,0 +1,261 @@
+
+.container {
+display: block; 
+
+	
+}
+.table{
+width: 100%;
+height:1000px;
+position: absolute;
+}
+
+.greed {display: block; 
+	flex: 1;
+	height: 100px;
+	border: 1px solid white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.area {
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+@media (min-width:320px) and (max-width:767px) {
+.container {
+display: flex;
+	width: 320px;  
+margin-left: auto;
+    margin-right: auto;
+
+}
+    
+.area { width: 320px; }
+
+}
+@media (min-width:768px) and (max-width: 1199px) {
+    .area { width: 768px; }
+.container {
+display: flex;
+	width: 768px;
+  margin-left: auto;
+    margin-right: auto;
+
+}
+
+}
+@media (min-width: 1200px) {
+.container {
+display: flex;
+	width: 1200px;  
+margin-left: auto;
+    margin-right: auto;
+
+}
+ 
+   .area { width: 1200px;
+}
+
+}
+.row:before,
+.row:after {
+    content: " ";
+    display: flex;
+}
+.row:after {
+    clear: both;
+}
+
+
+
+.col3{
+    padding:  15px 15px 15px 15px;
+    position: flex;
+    float: left;
+    height: 300px;
+}
+.col2{
+    padding:  15px 15px 15px 15px;
+    position: flex;
+    float: left;
+    height: 200px;
+}
+.col{
+  padding: 15px 15px 15px 15px;
+  position: flex;
+  float: left;
+  height: 100px;
+}
+.s{
+
+}
+@media (min-width: 320px) and (max-width: 767px){
+.col-xs-1  { width: 240px; }
+.col-xs-2  { width: 80px; }
+.col-xs-3  { width: 320px; }
+.col-xs-4  { width: 160px; }
+.col-xs-not{display: none;}
+.c{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+}
+/* Small (screen > 768px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .col-sm-1  { width: 512px; }
+    .col-sm-2  { width: 256px; }
+    .col-sm-3  { width: 384px; }
+    .col-sm-4  { width: 192px; }
+    .col-sm-not{display: none;}
+    .col-sm-all2{ height: 200px;
+      float: left;
+    }
+    .col-sm-all2r{ height: 200px;
+      float: right;
+    }
+    .c3{
+        margin-left: 64px;
+    }
+    .c2-sm{
+        margin-right: 64px;
+        margin-left: 64px;
+    }
+    .c{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 14px;
+    }
+
+}
+
+/* Large (screen > 1200px) */
+@media (min-width: 1200px) {
+	.col-lg-1  { width: 600px; }
+	.col-lg-2  { width: 800px; }
+    .col-lg-3  { width: 400px; }
+	.col-lg-4  { width: 300px; }
+    .col-lg-5  { width: 225px; }
+    .col-lg-6  { width: 450px; }
+    .col-lg-7  { width: 450px; }
+    .col-lg-not{display: none;}
+    .col-lg-s{
+      height: 100px;
+    }
+    .col-lg-r{
+      float:right;
+    }
+    .col-lg-all3{ height: 300px;
+      float: left;
+    }
+    .col-lg-all2{ height: 200px;
+      float: left;
+    }
+    .col-lg-all2r{ height: 200px;
+      float: right;
+    }
+    .col-lg-b{
+      width: 18.75%;
+    }
+    .col2-lg{
+        padding:  15px 15px 15px 15px;
+        position: relative;
+        float: left;
+        height: 200px;
+    }
+    .c2{
+        margin-left: 100px;
+        margin-right:100px;
+    }
+    .c{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 16px;
+    }
+}
+
+.color1{
+  background-color:#CD5C5C
+}
+.color2{
+  background-color:#DC143C
+}
+.color3{
+  background-color:#FFC0CB
+}
+.color4{
+  background-color:#FF69B4
+}
+.color5{
+  background-color:#C71585
+}
+.color6{
+  background-color:#ADFF2F
+}
+.color7{
+  background-color:#32CD32
+}
+.color8{
+  background-color:#00FA9A
+}
+.color9{
+  background-color:#2E8B57
+}
+.color10{
+  background-color:#006400
+}
+.color11{
+  background-color:#9ACD32
+}
+.color12{
+  background-color:#808000
+}
+.color13{
+  background-color:#00FF00
+}
+.color14{
+  background-color:#66CDAA
+}
+.color15{
+  background-color:#556B2F
+}
+.color16{
+  background-color:#008080
+}
+.color17{
+  background-color:#FFA07A
+}
+.color18{
+  background-color:#FF4500
+}
+.color19{
+  background-color:#BC8F8F
+}
+.color20{
+  background-color:#F4A460
+}
+.color21{
+  background-color:#D2691E
+}
+.color22{
+  background-color:#8B4513
+}
+.color23{
+  background-color:#A52A2A
+}
+
