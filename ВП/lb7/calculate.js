@@ -163,13 +163,7 @@ Calculator.prototype.Add=function()
 };
 
 
-Calculator.prototype.Pow=function()
-{
-    this.numberA= +(this.field.value);
-    this.field.value="";
-    this.field.placeholder=this.numberA;
-    this.operation="pow";
-};
+
 
 
 Calculator.prototype.Sub=function()
@@ -221,11 +215,7 @@ Calculator.prototype.Answer=function()
 };
 
 var calc=new Calculator(document.getElementById("text_field"));
-
 document.getElementById("button-plus").addEventListener("click",    ()=>{calc.Add()});
-
-document.getElementById("button-pow").addEventListener("click",    ()=>{calc.Pow()});
-
 document.getElementById("button-minus").addEventListener("click",   ()=>{calc.Sub()});
 document.getElementById("button-mul").addEventListener("click",     ()=>{calc.Mul()});
 document.getElementById("button-div").addEventListener("click",     ()=>{calc.Div()});
