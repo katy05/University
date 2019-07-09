@@ -1,0 +1,235 @@
+ td select,
+    td input {
+      width: 150px;
+    }
+    label {
+      display: block;
+    }
+    .error input,
+    .error textarea {
+      border: 1px solid red;
+    }
+    .error {
+      color: red;
+      font-family: "Lato", Arial,sans-serif;
+      font-size: 15px;	
+    }
+
+.area{
+    width: 100%;
+    height: 662px;
+    background: url(BG3.jpg) no-repeat center;
+}
+.foorm{
+     position: absolute;
+	width: 235px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	margin-left: -117.5px;
+	margin-top: -250px; 
+}
+.form-control{
+    width: 175px;
+}
+
+#login{
+     background-color:transparent;
+    padding: 8px;
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(153,153,153);
+    border: 1px solid rgb(153,153,153);
+    border-radius: 3px;
+    text-align: left;
+     resize: none;
+}
+#login:hover,
+#login:active {
+  color: white;
+    border: 1px solid white;
+}
+#pass{
+     background-color:transparent;
+    padding: 8px;
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(153,153,153);
+    border: 1px solid rgb(153,153,153);
+    border-radius: 3px;
+    text-align: left;
+     resize: none;
+}
+#pass:hover,
+#pass:active {
+  color: white;
+    border: 1px solid white;
+}
+#pass1{
+     background-color:transparent;
+    padding: 8px;
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(153,153,153);
+    border: 1px solid rgb(153,153,153);
+    border-radius: 3px;
+    text-align: left;
+     resize: none;
+}
+#pass1:hover,
+#pass1:active {
+  color: white;
+    border: 1px solid white;
+}
+#mail{
+     background-color:transparent;
+    padding: 8px;
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(153,153,153);
+    border: 1px solid rgb(153,153,153);
+    border-radius: 3px;
+    text-align: left;
+     resize: none;
+}
+#mail:hover,
+#mail:active {
+  color: white;
+    border: 1px solid white;
+}
+#select{
+    background-color:transparent;
+    padding: 8px;
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(153,153,153);
+    border: 1px solid rgb(153,153,153);
+    border-radius: 3px;
+    text-align: left;
+    resize: none;
+    width: 225px;
+}
+#select:hover,
+#select:active {
+  color: rgb(153,153,153);
+    background: transparent;
+    border: 1px solid white;
+}
+.load{
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 15px;
+    color: rgb(153,153,153);
+}
+#upload{
+    width: 245px;
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 15px;
+     color: rgb(153,153,153);
+}
+.sub{
+   width: 225px;
+    background-color:transparent;
+    padding: 8px;
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid rgb(21,164,250);
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+.sub:hover,
+.sub:active {
+  background-color: rgb(21,164,250);
+  color: white;
+}
+.tele{
+    background-color:transparent;
+    padding: 8px;
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(153,153,153);
+    border: 1px solid rgb(153,153,153);
+    border-radius: 3px;
+    text-align: left;
+     resize: none;
+}
+.mest_t{
+    background-color:transparent;
+    padding: 8px;
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(153,153,153);
+    border: 1px solid rgb(153,153,153);
+    border-radius: 3px;
+    text-align: left;
+     resize: none;
+}
+
+
+
+.file-upload {
+    top:-10px;
+     position: relative; /* ���� ����������� ������ ����������������, ������ ������� �������� */
+     overflow: hidden; /* ��� ��� ������� �� ������� - �������� */
+     width: 205px;; /* ������ ������ ������ ������ ����� */
+     height: 20px; /* ������ ������ ������ ������ ����� */
+    background-color:transparent;
+    padding: 8px;
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid rgb(21,164,250);
+    border-radius: 3px;
+    text-align: center;
+}
+.file-upload:hover {
+    background-color: rgb(21,164,250);
+  color: white;
+}
+.file-upload input[type="file"]{
+    display: none; /* ����������� �������� ��������� Input File */
+}
+.file-upload label {
+     /* ����������� label �� ��� ��������� ������� ����� .file-upload */
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+}
+.file-upload span {
+     line-height: 36px; /* ������ ������������ ������������ ������, ������� ������� �� ������ */
+}
+.sogl{
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+}
+.usl{
+    color: gray;
+}
+.pol
+{
+    font-family: "Lato", Arial,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    display: flex;
+    
+}
+.man{
+    margin-right: 107px;
+}
