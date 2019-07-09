@@ -56,7 +56,7 @@ Calculator.prototype.NanS=function()
     var buton = document.getElementsByTagName("input");
         for(var i=0; i<buton.length; i++)
         {
-			if(buton[i].value =="<"|| buton[i].value =="C" || buton[i].value =="CE")
+			if( buton[i].value =="C" || buton[i].value =="CE")
 				buton[i].disabled=false;	
 			else			
 				buton[i].disabled=(!false);		
@@ -138,9 +138,7 @@ numA+=+(numB);
         case "div":
             numA/=+(numB);
             break;
-        case "divE":
-			numA=(numA*numB)/100;
-            break;
+
         case "pow":
             if(numA==0 && numB==0){
                 numA="Ошибка";
@@ -200,10 +198,10 @@ Calculator.prototype.Div=function()
 
 Calculator.prototype.DivE=function()
 {
-    this.numberA= +(this.field.value);
-    this.field.value="";
-    this.field.placeholder=this.numberA;
-    this.operation="divE";
+    this.numberB= this.numberB ? this.numberB : this.field.value;
+    this.numberA=this.Operation(this.numberA,this.numberB/100);
+    this.field.placeholder="";
+    this.field.value=this.numberA;
 };
 
 Calculator.prototype.Answer=function()
