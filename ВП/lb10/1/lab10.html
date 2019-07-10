@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>title</title>
+    <style type="text/css">
+      .all{
+        margin: 50px 0px 0px 75px;
+      }
+      #zap{
+        min-width: 100px;
+      }
+      #text{
+        min-width: 350px;
+      }
+      #block{
+        margin-top: 20px;
+        width: 450px;
+        height: 200px;
+        position: relative;
+        float: left;
+      }
+    </style>
+</head>
+<body>
+<div class="all">
+   <label>Тип запроса</label>
+   <div><input type = "text" id="req"/></div><br/>
+   <label>Url:</label>
+   <div><input type = "text" id="text"/></div><br/>
+   <label>Заголовок</label>
+   <div><input type = "text" id="param"/></div><br/>
+   <label>Значение</label>
+   <div><input type = "text" id="value"/></div><br/>
+   <div><input type="submit" onclick="news()"/></div>
+   <div id="block"></div>
+</div>
+   <script src="server.js"></script>
+</body>
+</html>

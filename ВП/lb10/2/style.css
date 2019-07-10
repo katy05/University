@@ -1,0 +1,19 @@
+div {
+  margin: 50px;
+}
+
+.browser {
+  width: 100px;
+}
+
+.url {
+  width: 810px;
+}
+
+.block {
+  border: 4px solid green;
+  width: 876px;
+  height: 700px;
+  overflow-x:auto;
+  overflow-y:auto;
+}
