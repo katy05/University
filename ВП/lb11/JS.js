@@ -11,6 +11,7 @@ function Uncheck(form)
     form.Mail.value="";
     form.File.value="";
     form.Date.value="";
+    form.telephone.value="";
     form.CheckIf.checked=false;
 }
 function Ch(form)
@@ -19,6 +20,7 @@ function Ch(form)
     check[i++]=chUserName(form.UserName);
     check[i++]=chPassword(form.Password);
     check[i++]=chPasswordConfirm(form.Password,form.RePassword);
+    check[i++]=chtelephone(form.telephone);
     check[i++]=chName(form.Names);
     check[i++]=chMail(form.Mail);
     check[i++]=chFile(form.File);
@@ -86,6 +88,23 @@ function chPasswordConfirm(Password,RePassword)
         return true;
     }
 }
+
+function chtelephone(telephone){
+
+const phonePattern = /^\d[\d\(\)\ -]{4,14}\d$/i;
+    if(!phonePattern.test(telephone.value))
+    {
+      telephone.style["boxShadow"]="0 0 6px 2px rgba(250,7,7,0.9)";
+    document.getElementById('_9').style.display="block";
+        return false;
+    }
+    else
+    {
+      telephone.style["boxShadow"]="0 0 6px 2px rgba(7,250,7,0.9)";
+    document.getElementById('_9').style.display="none";
+        return true;
+    }}
+
 function chName(Names)
 {
     if(Names.value.length<2)
