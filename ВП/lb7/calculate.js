@@ -33,7 +33,7 @@ Calculator.prototype.NumberXNumber=function()
 Calculator.prototype.X1Number=function()
 {
     this.field.value=1/this.field.value;
-    this.operation="none";
+    
 	if(isNaN(this.field.value)||this.field.value.search("Inf")!=-1)
 	{
 		this.Nan_Infinity=true;
