@@ -19,6 +19,9 @@
             <input type="password" name="RePassword" placeholder=" Подтвердите пароль">
         </div>
         <div class="dws-input">
+            <input type="tel" name="telephone" placeholder="Номер телефона">
+        </div>
+        <div class="dws-input">
             <input type="text" name="Names" placeholder=" Имя">
         </div>
         <div class="dws-input">
@@ -269,7 +272,7 @@
         </div>
         <div class="recover">
             <input type="checkbox" name="CheckIf" id="check" class="check">
-            <label for="check" style="color:white;">Согласен(-а) на обработку личных данных</label>
+            <label for="check" style="color:white;">С <a href="terms.txt" style="color:white;">правилами</a> ознакомлен(-а) и согласен(-а)</label>
         </div>
 
         <input type="button" name="submit" value="Зарегестрироваться" class="dws-submit" onclick="Ch(getForm())" >
@@ -283,7 +286,8 @@
   <span id="_5">Email введен не верно</span>
   <span id="_6">Выберите картинку</span>
   <span id="_7">Вам должно быть больше 12</span>
-  <span id="_8">Не подтверждено условие</span>
+  <span id="_8">Требуется ваше соглашение</span>
+  <span id="_9">Проверьте введенный номер телефона</span>
 </div>
 <script src="JS.js"></script>
 </body>
