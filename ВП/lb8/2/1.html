@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Игра Морской бой</title>
+<link href="fonts/SegoePrint/fonts.css" rel="stylesheet">
+<link href="seabattle.style.css" rel="stylesheet">
+</head>
+
+<body>
+
+		<div class="battlefield">
+				<!-- верхний блок для вывода текстовых сообщений -->
+				<div id="text_top" class="text-top">Расстановка кораблей</div>
+				<div class="outer clearfix">
+					<!-- поле игрока -->
+					<div class="field field-user">
+                        <div class="ships ship fourdeck"></div>
+                        <div class="ships ship tripledeck" style="margin-top:63px; position:absolute;"></div>
+                        <div class="ships ship tripledeck" style="margin-left: 129px; margin-top:69px;	transform: rotate(90deg);"></div>
+                        <div class="ships ship doubledeck" style="margin-left: 230px; margin-top:129px;"></div>
+                        <div class="ships ship doubledeck" style="margin-left: 249px; margin-top:244px; transform: rotate(90deg);"></div>
+                        <div class="ships ship doubledeck" style="margin-left: 165px; margin-top:295px;"></div>
+                        <div class="ships ship singledeck" style="margin-left: 33px; margin-top:229px;"></div>
+                        <div class="ships ship singledeck" style="margin-left: 33px; margin-top:229px;"></div>
+                        <div class="ships ship singledeck" style="margin-left: 99px; margin-top:229px;"></div>
+                        <div class="ships ship singledeck" style="margin-left: 99px; margin-top:163px;"></div>
+                        <div class="ships ship singledeck" style="margin-left: 33px; margin-top:163px;"></div>
+                        <div class="ships ship red-cross" style="margin-left: 33px; margin-top:0;"></div>
+                        <div class="ships ship red-cross"></div>
+                        <div class="ships ship dot" style="margin-left: 295px; margin-top:295px;"></div>
+                        <div class="ships ship dot" style="margin-left: 33px; margin-top:295px;"></div>
+                        <div class="ships ship dot" style="margin-left: 0px; margin-top:295px;"></div>
+
+
+
+					</div>
+			
+					<!-- поле компьютера -->
+					<div class="field field-comp">
+                        <div id="field_comp" class="ships"></div>
+                        <div class="ships ship red-cross" style="margin-top:63px;"></div>
+                        <div class="ships ship red-cross" style="margin-left: 33px; margin-top:163px;"></div>
+                        <div class="ships ship dot" style="margin-left: 230px; margin-top:129px;"></div>
+                        <div class="ships ship dot" style="margin-left: 249px; margin-top:244px; "></div>
+                        <div class="ships ship dot" style="margin-left: 0px; margin-top:295px;"></div>
+                        <div class="ships ship red-cross" style="margin-left: 33px; margin-top:0;"></div>
+                        <div class="ships ship dot" style="margin-left: 165px; margin-top:0px;"></div>
+                        <div class="ships ship red-cross" style="margin-left: 99px; margin-top:262px;"></div>
+                        <div class="ships ship dot" style="margin-left: 129px; margin-top:66px;"></div>
+					</div>
+    
+                </div>
+		</div>
+			
+<script src="seabattle.function.js"></script>
+
+
+</body>
+</html>
