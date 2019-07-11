@@ -22,7 +22,6 @@ Calculator.prototype.Number=function(number)
 Calculator.prototype.NumberXNumber=function()
 {
     this.field.value=+(this.field.value)*(this.field.value);
-    this.operation="none";
 	if(isNaN(this.field.value)||this.field.value.search("Inf")!=-1)
 	{
 		this.Nan_Infinity=true;
@@ -44,7 +43,6 @@ Calculator.prototype.X1Number=function()
 Calculator.prototype.Sqrt=function()
 {
     this.field.value=Math.sqrt(this.field.value);
-    this.operation="none";
 	if(isNaN(this.field.value)||this.field.value.search("Inf")!=-1)
 	{
 		this.Nan_Infinity=true;
